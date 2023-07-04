@@ -1,5 +1,10 @@
 import { useState } from 'react'
 
+// creating button component
+const Button = () => {
+
+}
+
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
@@ -8,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-      code here
+      <h1>give feedback</h1>
     </div>
   )
 }
