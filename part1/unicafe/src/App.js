@@ -5,6 +5,14 @@ const Button = () => {
 
 }
 
+const Header = () => {
+
+}
+
+const Feedback = () => {
+
+}
+
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
