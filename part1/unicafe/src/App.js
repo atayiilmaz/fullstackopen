@@ -18,7 +18,12 @@ const StatisticLine = (props) => {
   return (
 
     <>
-      <p>{props.name} {props.value}</p>
+    <table>
+      <tr>
+        <td>{props.name}</td>
+        <td>{props.value} {props.symbol}</td>
+      </tr>
+    </table>
     </>
   )
 }
@@ -45,7 +50,7 @@ const Statistics = (props) => {
       <StatisticLine name="bad" value={props.bad} />
       <StatisticLine name="total" value={props.total} />
       <StatisticLine name="average" value={props.average} />
-      <StatisticLine name="positive" value={props.positive} />
+      <StatisticLine name="positive" value={props.positive} symbol="%"/>
     </>
   )
 
