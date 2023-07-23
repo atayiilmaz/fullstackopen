@@ -1,7 +1,15 @@
 import { useState } from 'react'
 
 // creating button component
-const Button = () => {
+const Button = (props) => {
+
+  return (
+
+  <>
+    <button type='submit'>{props.name}</button>
+  </>
+
+  )
 
 }
 
@@ -22,6 +30,11 @@ const App = () => {
   return (
     <div>
       <h1>give feedback</h1>
+      <Button name="good"></Button>
+      <Button name="neutral"></Button>
+      <Button name="bad"></Button>
+      <h1>statistics</h1>
+
     </div>
   )
 }
